@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+    
+	<meta name="viewport" content= "width=device-width, initial-scale=1.0" />﻿
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+  
+      <link rel="stylesheet" href="css/style.css">
+  
+</head>
+
+<body>
+  <html>
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="main.css">
+  
+<link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900' rel='stylesheet' type='text/css'>  
+
+</head>
+  
+<div class="page-title">  
+  
+  <h1>Main Street Music Center</h1>  
+
+</div>  
+  
+<h2> Welcome to Main Street Music's Website! </h2>  
+  
+<div id="mySidenav" class="sidenav">
+
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <h2> Where great music happens! </h2>
+      <a href="index.html">Home</a>
+      <a href="cato.html">Shop</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+	  <a href="location.html">Location</a>
+	  <img style="max-width: 70%; min-width:20%;" id="logo" src="logo.png" alt="The Music Store to Rule Them All!"/>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+<script>
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "33%";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+ <img src="1556_1507213160246.jpeg" alt="The Main Music Store" />
+ 
+ <div class="indextxt">
+ 
+ <p style="width: 100%;
+  text-align: center;">
+ Welcome to Main Street Music Center. Your downtown connection for finding everything you'll need to start your own band or satisfy your musical sweet tooth.
+ Main Street Music Center provides a great selection of new and used music instruments and accessories along with in-house lessons for the beginner musician.</p>
+		
+</div>	
+<div class="homeshow">
+
+<div class="mySlides">
+  <div class="numbertext">1 / 9</div>
+  <img src="building/chalk/1.jpg" style="max-height: 400px; width:100%;">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">2 / 9</div>
+  <img src="slide/guitar.jpg" style="max-height: 400px; width:100%;">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">3 / 9</div>
+  <img src="slide/tree.jpg" style="max-height: 400px; width:auto;">
+  <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">4 / 9</div>
+  <img src="building/miscwithpeople/1.jpg" style="max-height: 400px; width:100%;">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">5 / 9</div>
+  <img src="building/miscwithpeople/2.jpg" style="max-height: 400px; width:100%;">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">6 / 9</div>
+  <img src="building/miscwithpeople/3.jpg" style="max-height: 400px; width:auto;">
+  <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">7 / 9</div>
+  <img src="building/miscwithpeople/4.jpg" style="max-height: 400px; width:100%;">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">8 / 9</div>
+  <img src="building/miscwithpeople/5.jpg" style="max-height: 400px; width:100%;">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">9 / 9</div>
+  <img src="slide/selection.jpg" style="max-height: 400px; width:auto;">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>		
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+			
+ <p>&copy; Main Street Music Center </p>
+  
+</html>
+  
+  
+</body>
+</html>
