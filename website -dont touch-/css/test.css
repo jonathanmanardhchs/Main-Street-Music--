@@ -1,0 +1,226 @@
+.backgroundimage{
+  background-position:center;
+  background-size:cover;
+}
+
+#logo{
+  z-index: -1;
+  top: 300px;
+}
+
+h1, h2{
+text-align:center;
+clear:both;
+font-family:'Lato';
+font-weight: 100;
+}
+
+p {
+	font-weight: 175;
+	text-align: center;
+	clear: left;
+	clear: right;
+	box-sizing: border-box;
+}
+
+section .row img {
+  margin: 0 0 30px;
+  width: 33%;
+  align-items: center;
+}
+
+.col-md-6 {
+  margin: 0 0 30px;
+}
+
+figure img {
+	position: relative;
+	left: 200px;
+}
+
+#container {
+	width: 100%;
+	margin: 0px auto;
+}
+
+#leftcolumn {
+    top: 2em;
+	width: 70%;
+	float: left;
+}
+
+#rightcolumn {
+    top: 15%;
+	width: 30%;
+	float: left;
+}
+
+#leftcolumn, img {
+	    top: 2em;
+		margin: auto;
+		display: block;
+	}
+	
+	#rightcolumn, img {
+		margin: 0 auto;
+		display: block;
+	}
+
+@media screen and (max-width:959px) and (orientation: potrait) {
+	#container {
+		width:100% ;
+	}
+	#leftcolumn {
+		width: 70%;
+	}
+	#rightcolumn {
+		width: 30%;
+	}
+	img {
+		max-width: 100%;
+	}
+
+}
+
+@media screen and (max-width:640px) {
+	#leftcolumn {
+		width: 100%;
+	}
+	#rightcolumn {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width:320px) {
+	#container {
+		width:320px ;
+	}
+	#leftcolumn {
+		width: 100%;
+	}
+	#rightcolumn {
+		width: 100%;
+	}
+}
+
+.floor {
+	text-align: center;
+	position: center;
+	box-sizing: border-box;
+	display: inline;
+	clear: both;
+	left: 50px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 90%) {
+  .sidenav {padding-top: 2em;}
+  .sidenav a {font-size: 2em;}
+}
+
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ccc; 
+}
+
+div.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+}
+
+.slideshow {
+	margin: auto;
+	position: relative;
+	height: 40%;
+	width: 50%;
+}
+
+.page {
+	float: right;
+}
+
+
+/* Next & previous buttons */
+.back, .foward {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.foward {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.back:hover, .foward:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+@media screen and (max-width: 66.66%) and (orientation: potrait) {
+	.slideshow {
+		width: 100% ;
+	}
+	.page {
+		width: 100%;
+	}
+	
+	div .page img {
+		max-width: 100%;
+	}
+
+}
